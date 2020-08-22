@@ -13,10 +13,10 @@ version_compare(PHP_VERSION, '7.0.0', '>=') or errorMsg::Show('Your PHP Version 
 errorMsg::get_protocol() or errorMsg::Show('Protocol Not Define');
 
 /** Site name : `Base Project` */
-defined('SITE_NAME') or define('SITE_NAME', 'Institute');
+defined('SITE_NAME') or define('SITE_NAME', 'appcare');
 
 /** Site Url : `$_SERVER['HTTP_HOST']` */
-defined('SITE_URL') or define('SITE_URL', errorMsg::get_protocol() . $_SERVER['HTTP_HOST'] . '/insti/');
+defined('SITE_URL') or define('SITE_URL', errorMsg::get_protocol() . $_SERVER['HTTP_HOST'] . '/appcare/');
 
 defined('PASSWORD_SALT') or define('PASSWORD_SALT', md5(SITE_NAME . '-TwsTechies'));
 
